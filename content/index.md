@@ -1,0 +1,1 @@
+Hey I'm Lucy! Feel free to use my notes, I am taking the new CS modules: Data Analytics and Probability and Statistics! :)
