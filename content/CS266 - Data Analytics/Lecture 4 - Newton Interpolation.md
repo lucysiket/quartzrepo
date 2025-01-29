@@ -1,4 +1,4 @@
-*Limitation of Lagrange Interpolation**
+**Limitation of Lagrange Interpolation**
 When adding a new point to the data set, all the Lagrange basis need to be recomputed from scratch
 	Each $L_{i}(x)$ depends on the entire set of interpolation points
 
