@@ -34,9 +34,22 @@ This specifies:
 * **Frequency** - This is the **term number**, so frequency 3 represents $sin(3t)$ because this is the third term.
 * **Amplitude** - This represents the term's **coefficient** (so amplitude $\frac{1}{3}$ would cause $sin(3t)$ to become $\frac{1}{3}sin(3t)$).
 
-But how do we find the coefficients for each sine or cosine components?
+**But how do we find the coefficients for each sine or cosine components?**
 
 > [!Fourier transform]
 > (Time $\rightarrow$ Frequency)
-> 
-> F($\omega$) = $\int^{+\infty}_{-\infty}X(t) \times e^{-i\omega t}dt$
+> ## F($\omega$) = $\int^{+\infty}_{-\infty}X(t) \times e^{-i\omega t}dt$
+> ## = F($\omega$) = $\int^{+\infty}_{-\infty}X(t) \times cos(\omega t) dt$ - $i \int^{+\infty}_{-\infty} X(t) \times sin(\omega t) dt$
+> The **first term** is how X correlates to **cosine waves**. 
+> The **second term** is how X correlates to **sine waves**.
+> * F($\omega$) - This is the **frequency** against **amplitude** representation.
+> 	
+> 	![[Pasted image 20250129150130.png]]
+> * $X(t)$ - This is the **time series** function we want to transform. Such as the square wave function.
+>   
+> 	![[Pasted image 20250129150053.png]]
+> * $e^{-i\omega t}$ - This is the representation of **cosine** and **sine**, using the **exponential form** of complex numbers.
+>   
+> 	![[Pasted image 20250129150314.png]]
+
+**Example**
